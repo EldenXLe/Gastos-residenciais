@@ -1,3 +1,4 @@
+/* Estilos para a página de Cadastro de Transações */
 form {
   display: flex;
   flex-direction: column;
@@ -25,7 +26,7 @@ button:hover {
   background-color: #45a049;
 }
 
-.filter{
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -35,7 +36,7 @@ button:hover {
 ul.transactions {
   list-style-type: none;
   padding: 0;
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 
@@ -47,52 +48,13 @@ ul.transactions li {
   border-radius: 4px;
 }
 
-/* Estilos para o menu de navegação */
-nav {
-  display: flex;
-  justify-content: flex-end;
-  padding: 5px;
-  background-color: #333;
-}
-
-nav ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin-left: 20px;
-}
-
-nav a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-
-nav li:hover {
-  background-color: #78cc5e;
-  border-radius: 4px;
-}
-
-/*Responsividade*/
+/* Media Queries para Responsividade */
 @media (max-width: 768px) {
   ul.transactions {
-    width: 100%;
+    width: 80%;
   }
 
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav li {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-
-  input, select, button {
-    width: 100%;
+  .transactionsForm input, select {
+    width: 80%;
   }
 }

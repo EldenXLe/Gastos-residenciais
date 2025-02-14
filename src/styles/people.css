@@ -26,15 +26,14 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Estilos para a lista de pessoas */
-ul {
+.people ul {
   list-style-type: none;
   padding: 0;
   width: 50%;
   margin: auto;
 }
 
-li {
+.people li {
   background-color: #fff;
   margin: 5px 0;
   padding: 10px;
@@ -59,55 +58,17 @@ li button:hover {
   background-color: #e53935;
 }
 
-/* Estilos para o menu de navegação */
-nav {
-  display: flex;
-  justify-content: flex-end;
-  padding: 5px;
-  background-color: #333;
-}
-
-nav ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin-left: 20px;
-  width: auto;
-  text-align: center;
-  padding: 5px 10px;
-}
-
-nav a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-
-nav li:hover {
-  background-color: #78cc5e;
-  border-radius: 4px;
-}
-
-/* Media Queries para Responsividade */
+/*Responsividade */
 @media (max-width: 768px) {
-  ul {
+  .people{
     width: 100%;
   }
-
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
+  
+  .people ul {
+    width: 80%;
   }
 
-  nav li {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-
-  input, select, button {
-    width: 100%;
+  .people input, select {
+    width: 80%;
   }
 }

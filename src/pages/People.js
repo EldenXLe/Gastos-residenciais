@@ -68,7 +68,7 @@ const People = ({ people, setPeople, transactions, setTransactions }) => {
   };
 
   return (
-    <div>
+    <div className="people">
       <h1>Cadastro de Pessoas</h1>
       <form onSubmit={addPerson}>
         <input
