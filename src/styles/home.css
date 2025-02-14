@@ -1,4 +1,3 @@
-/* Estilos para a página inicial */
 .home-container {
   padding: 20px;
   text-align: center;
@@ -57,7 +56,7 @@
   color: #666;
 }
 
-/* Media Queries para Responsividade */
+/*Responsividade */
 @media (max-width: 768px) {
   .home-container {
     width: 90%;
