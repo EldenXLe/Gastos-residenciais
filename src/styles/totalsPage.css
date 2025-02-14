@@ -1,27 +1,75 @@
 /* Estilos para a página de Consulta de Totais */
 table {
-    width: 95%;
-    border-collapse: collapse;
-    margin: 20px auto;
-  }
-  
-  table, th, td {
-    border: 1px solid #ddd;
-  }
-  
-  th, td {
-    padding: 12px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+td {
+  background-color: #fff;
+}
+
+.totals {
+  margin-top: 20px;
+}
+
+.totals td {
+  font-weight: bold;
+}
+
+/* Estilos para o menu de navegação */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #78cc5e;
+  border-radius: 4px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
   }
 
-  .totals {
-    width: 40%;
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}

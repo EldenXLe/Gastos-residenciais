@@ -63,7 +63,7 @@ li button:hover {
 nav {
   display: flex;
   justify-content: flex-end;
-  padding: 10px;
+  padding: 5px;
   background-color: #333;
 }
 
@@ -76,15 +76,38 @@ nav ul {
 
 nav li {
   margin-left: 20px;
+  width: auto;
+  text-align: center;
+  padding: 5px 10px;
 }
 
 nav a {
   color: rgb(0, 0, 0);
   text-decoration: none;
-  padding: 5px;
 }
 
 nav li:hover {
   background-color: #78cc5e;
   border-radius: 4px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  ul {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  input, select, button {
+    width: 100%;
+  }
 }

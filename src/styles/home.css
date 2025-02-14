@@ -1,56 +1,78 @@
+/* Estilos para a página inicial */
 .home-container {
-    padding: 20px;
-    text-align: center;
-    background-color: rgb(141, 236, 129);
-    width: 60%;
-    margin: 10px auto;
-    border: 1px solid #333;
-    border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(118, 194, 218);
+  width: 60%;
+  margin: 10px auto;
+  border: 1px solid #333;
+  border-radius: 20px;
+}
+
+.home-container h1 {
+  color: #333;
+}
+
+.home-container h2 {
+  color: #555;
+}
+
+.home-container p {
+  font-size: 16px;
+  color: #666;
+  margin: 20px 0;
+}
+
+.features {
+  margin: 20px 0;
+}
+
+.features h3 {
+  color: #333;
+}
+
+.features ul {
+  list-style-type: none;
+  padding: 0;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.features li {
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.data {
+  margin: 20px 0;
+}
+
+.data h3 {
+  color: #333;
+}
+
+.data p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .home-container {
+    width: 90%;
+    padding: 10px;
   }
-  
-  .home-container h1 {
-    color: #333;
-  }
-  
-  .home-container h2 {
-    color: #555;
-  }
-  
-  .home-container p {
-    font-size: 16px;
-    color: #666;
-    margin: 20px 0;
-  }
-  
-  .features {
-    margin: 20px 0;
-  }
-  
-  .features h3 {
-    color: #333;
-  }
-  
+
   .features ul {
-    list-style-type: none;
-    padding: 0;
-    width: 30%;
+    width: 100%;
   }
-  
+
   .features li {
-    font-size: 16px;
-    color: #666;
-    margin: 5px 0;
+    font-size: 14px;
   }
-  
-  .data {
-    margin: 20px 0;
+
+  .home-container p, .data p {
+    font-size: 14px;
   }
-  
-  .data h3 {
-    color: #333;
-  }
-  
-  .data p {
-    font-size: 16px;
-    color: #666;
-  }
+}

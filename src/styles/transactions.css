@@ -1,65 +1,98 @@
-/* Estilos para a página de Cadastro de Transações */
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  input, select, button {
-    margin: 5px 0;
-    padding: 10px;
-    width: 80%;
-    max-width: 400px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Estilos para a lista de transações */
-  .transactions {
-    list-style-type: none;
-    padding: 0;
-    margin: auto;
-    width: 50%;
-  }
-  
-  li {
-    background-color: #fff;
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  li button {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  li button:hover {
-    background-color: #e53935;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  margin: 5px 0;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.filter{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para a lista de transações */
+ul.transactions {
+  list-style-type: none;
+  padding: 0;
+  width: 80%;
+  margin: auto;
+}
+
+ul.transactions li {
+  background-color: #fff;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Estilos para o menu de navegação */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #78cc5e;
+  border-radius: 4px;
+}
+
+/*Responsividade*/
+@media (max-width: 768px) {
+  ul.transactions {
+    width: 100%;
   }
 
-  .filter{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  input, select, button {
+    width: 100%;
+  }
+}
